@@ -21,9 +21,8 @@ export enum TileType {
 
 export interface ITile {
     type: TileType;
+    icon: any;
     title: string;
-    subtitle: string;
-    icon: string;
     description: string;
 }
 
@@ -36,9 +35,9 @@ export class Tile extends React.Component<Tile.Props, Tile.State> {
         return (
             <div className='tile'>
                 <div className='tile-inner'>
-                    <h1 className='tile-title'>title</h1>
-                    <h2 className='tile-subtitle'>subtitle</h2>
-                    <p className='tile-description'>lorem ipsum</p>
+                    <img className='tile-icon' src={this.props.icon} />
+                    <h1 className='tile-title'>{this.props.title}</h1>
+                    <p className='tile-description'>{this.props.description}</p>
                 </div>
             </div>
         );

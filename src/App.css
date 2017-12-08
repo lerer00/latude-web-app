@@ -4,25 +4,59 @@
 
 .centered-division {
     width: 1080px;
-    margin: 48px auto;
+    margin: auto;
+    padding: 80px 0;
+    display: block;
 }
 
-.about {
+.availability-systems {
     color: #595959;
     text-align: center;
 }
 
-.about .about-icon {
-    width: 88px;
-    margin-bottom: 16px;
-}
-
-.about .about-title {
-    font-size: 2.6em;
+.title {
+    display: table;
+    margin: auto;
+    font-size: 2.0em;
     letter-spacing: 2px;
-    margin-bottom: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
-.about .about-description {
-    font-size: 1em;
+.description {
+    color: #A7A7A7;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.availability-systems .container, .benefits .container {
+    margin-top: 24px;
+    width: 96%;
+    max-width: initial;
+}
+
+.benefits {
+    background-color: #F4F4F4;
+    text-align: center;
+}
+
+.benefits .tile {
+    background-color: #FFFFFF;
+}
+
+.footer {
+    background-color: #0667D0;
+}
+
+.footer .footer-inner {
+    padding: 16px 0;
+    color: #FFFFFF;
+}
+
+.line-separated:after {
+    margin: 24px auto;
+    content: ' ';
+    display: block;
+    width: 120px;
+    border: 0.5px solid #C0C0C0;
 }

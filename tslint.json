@@ -25,8 +25,7 @@
         "jsx-no-multiline-js": false,
         "label-position": true,
         "max-line-length": [
-            true,
-            200
+            false
         ],
         "member-ordering": [
             true,

@@ -26,11 +26,17 @@ export interface IButton {
 export class Button extends React.Component<Button.Props, Button.State> {
     constructor(props?: Button.Props, context?: Button.Context) {
         super(props, context);
+
+        this.executeAction = this.executeAction.bind(this);
+    }
+
+    executeAction() {
+        this.props.action();
     }
 
     render() {
         return (
-            <button className='button' onClick={this.props.action()}>
+            <button className='button' onClick={() => this.executeAction()}>
                 <img className='button-icon' src={egoPenChecklist} />
                 <span className='button-text'>{this.props.text}</span>
             </button>
