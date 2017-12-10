@@ -18,7 +18,8 @@ import './App.css';
 const egoLab = require('./img/ego/lab.svg');
 const egoLaunch = require('./img/ego/launch.svg');
 const egoLogout1 = require('./img/ego/logout-1.svg');
-const egoRobot = require('./img/ego/robot.svg');
+const egoDevices = require('./img/ego/devices.svg');
+const egoTransferFile = require('./img/ego/transfer-file.svg');
 
 class App extends React.Component {
   constructor() {
@@ -44,7 +45,7 @@ class App extends React.Component {
                     <p className='description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                   </div>
                   <div className='col-6'>
-                    <img className='custom-svg-overview' src={egoLab} />
+                    <img src={egoLab} />
                   </div>
                 </div>
               </div>
@@ -55,7 +56,7 @@ class App extends React.Component {
               <div className='container'>
                 <div className='row'>
                   <div className='col-6'>
-                    <img className='custom-svg-overview' src={egoLaunch} />
+                    <img src={egoLaunch} />
                   </div>
                   <div className='col-6'>
                     <h1 className='title on-light line-separated'>Becoming independant</h1>
@@ -74,7 +75,7 @@ class App extends React.Component {
                     <p className='description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                   </div>
                   <div className='col-6'>
-                    <img className='custom-svg-overview' src={egoRobot} />
+                    <img src={egoDevices} />
                   </div>
                 </div>
               </div>
@@ -111,39 +112,39 @@ class App extends React.Component {
                   <div className='col-2' />
                 </div>
                 <div className='row'>
-                  <div className='col-6'>
-                    <h1 className='title on-dark line-separated'>Piece #1 <br /> blockchain contracts</h1>
-                    <p className='description on-dark'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                  <div className='col-2'>
+                    <img className='icon on-dark-icon' src={egoTransferFile} />
                   </div>
-                  <div className='col-6'>
-                    <img className='tile-icon' src={egoLab} />
-                  </div>
-                </div>
-                <div className='row'>
-                  <div className='col-6'>
-                    <h1 className='title on-dark line-separated'>Piece #2 <br /> blockchain listener</h1>
-                    <p className='description on-dark'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                  </div>
-                  <div className='col-6'>
-                    <img className='tile-icon' src={egoLab} />
+                  <div className='col-10'>
+                    <h1 className='title-2 on-dark'>Module #1: blockchain contracts</h1>
+                    <p className='description description-left on-dark'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                   </div>
                 </div>
                 <div className='row'>
-                  <div className='col-6'>
-                    <h1 className='title on-dark line-separated'>Piece #3 <br /> DApp for owners</h1>
-                    <p className='description on-dark'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                  <div className='col-2'>
+                    <img className='icon on-dark-icon' src={egoTransferFile} />
                   </div>
-                  <div className='col-6'>
-                    <img className='tile-icon' src={egoLab} />
+                  <div className='col-10'>
+                    <h1 className='title-2 on-dark'>Module #2: blockchain listener</h1>
+                    <p className='description description-left on-dark'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                   </div>
                 </div>
                 <div className='row'>
-                  <div className='col-6'>
-                    <h1 className='title on-dark line-separated'>Piece #4 <br /> DApp for users</h1>
-                    <p className='description on-dark'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                  <div className='col-2'>
+                    <img className='icon on-dark-icon' src={egoTransferFile} />
                   </div>
-                  <div className='col-6'>
-                    <img className='tile-icon' src={egoLab} />
+                  <div className='col-10'>
+                    <h1 className='title-2 on-dark'>Module #3: DApp for owners</h1>
+                    <p className='description description-left on-dark'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                  </div>
+                </div>
+                <div className='row'>
+                  <div className='col-2'>
+                    <img className='icon on-dark-icon' src={egoTransferFile} />
+                  </div>
+                  <div className='col-10'>
+                    <h1 className='title-2 on-dark'>Module #4: DApp for users</h1>
+                    <p className='description description-left on-dark'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                   </div>
                 </div>
               </div>

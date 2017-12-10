@@ -47,18 +47,42 @@
     text-transform: uppercase;
 }
 
+.title-2 {
+    position: relative;
+    display: table;
+    font-size: 1.4em;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
 .description {
     color: #A7A7A7;
     font-size: 1.1em;
     line-height: 1.6;
 }
 
+.description-left {
+    text-align: left;
+}
+
 .on-dark {
     color: #FFFFFF;
 }
 
+.on-dark-icon {
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
 .on-light {
     color: #595959;
+}
+
+.icon {
+    padding: 24px;
+    width: 100px;
 }
 
 .line-separated:after {
@@ -70,10 +94,6 @@
 }
 
 /* END COMMON */
-
-.custom-svg-overview{
-    width: 100%;
-}
 
 .footer .centered-division {
     padding: 16px 0;
