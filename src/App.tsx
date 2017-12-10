@@ -14,11 +14,14 @@ import './App.css';
 // const egoTram = require('./img/ego/tram.svg');
 // const egoBusStop = require('./img/ego/bus-stop.svg');
 // const egoMultiPlatform = require('./img/ego/multi-platform.svg');
-// const egoPizza = require('./img/ego/pizza.svg');
+// const egoPizza = require('./img/eg/pizza.svg');
+const egoBusinessWorkStation2 = require('./img/ego/business-work-station-2.svg');
+const egoDevices = require('./img/ego/devices.svg');
 const egoLab = require('./img/ego/lab.svg');
 const egoLaunch = require('./img/ego/launch.svg');
 const egoLogout1 = require('./img/ego/logout-1.svg');
-const egoDevices = require('./img/ego/devices.svg');
+const egoMultiPlatform2 = require('./img/ego/multi-platform-2.svg');
+const egoNetwork = require('./img/ego/network.svg');
 const egoTransferFile = require('./img/ego/transfer-file.svg');
 
 class App extends React.Component {
@@ -122,7 +125,7 @@ class App extends React.Component {
                 </div>
                 <div className='row'>
                   <div className='col-2'>
-                    <img className='icon on-dark-icon' src={egoTransferFile} />
+                    <img className='icon on-dark-icon' src={egoNetwork} />
                   </div>
                   <div className='col-10'>
                     <h1 className='title-2 on-dark'>Module #2: blockchain listener</h1>
@@ -131,7 +134,7 @@ class App extends React.Component {
                 </div>
                 <div className='row'>
                   <div className='col-2'>
-                    <img className='icon on-dark-icon' src={egoTransferFile} />
+                    <img className='icon on-dark-icon' src={egoBusinessWorkStation2} />
                   </div>
                   <div className='col-10'>
                     <h1 className='title-2 on-dark'>Module #3: DApp for owners</h1>
@@ -140,7 +143,7 @@ class App extends React.Component {
                 </div>
                 <div className='row'>
                   <div className='col-2'>
-                    <img className='icon on-dark-icon' src={egoTransferFile} />
+                    <img className='icon on-dark-icon' src={egoMultiPlatform2} />
                   </div>
                   <div className='col-10'>
                     <h1 className='title-2 on-dark'>Module #4: DApp for users</h1>
@@ -150,87 +153,27 @@ class App extends React.Component {
               </div>
             </div>
           </div>
-          {/* <div className='benefits'>
+          <div className='white-division'>
             <div className='centered-division'>
-              <h1 className='title line-separated'>More benefits</h1>
-              <p className='description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
               <div className='container'>
                 <div className='row'>
-                  <div className='col-3'>
-                    <Tile
-                      title='Safe and Secure'
-                      type={1}
-                      description=''
-                      icon={egoShield}
-                    />
+                  <div className='col-2' />
+                  <div className='col-8 col'>
+                    <h1 className='title on-light line-separated'>Timeline</h1>
+                    <p className='description on-light'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                   </div>
-                  <div className='col-3'>
-                    <Tile
-                      title='Time saving'
-                      type={1}
-                      description=''
-                      icon={egoClock}
-                    />
-                  </div>
-                  <div className='col-3'>
-                    <Tile
-                      title='Open source'
-                      type={1}
-                      description=''
-                      icon={egoGramophone2}
-                    />
-                  </div>
-                  <div className='col-3'>
-                    <Tile
-                      title='Less friction'
-                      type={1}
-                      description=''
-                      icon={egoTram}
-                    />
-                  </div>
-                  <div className='col-3'>
-                    <Tile
-                      title='Money Saving'
-                      type={1}
-                      description=''
-                      icon={egoWallet}
-                    />
-                  </div>
-                  <div className='col-3'>
-                    <Tile
-                      title='Decentralized'
-                      type={1}
-                      description=''
-                      icon={egoPizza}
-                    />
-                  </div>
-                  <div className='col-3'>
-                    <Tile
-                      title='Public service'
-                      type={1}
-                      description=''
-                      icon={egoBusStop}
-                    />
-                  </div>
-                  <div className='col-3'>
-                    <Tile
-                      title='Easy to use'
-                      type={1}
-                      description=''
-                      icon={egoMultiPlatform}
-                    />
+                  <div className='col-2' />
+                </div>
+                <div className='row'>
+                  <div className='col-3' />
+                  <div className='col-9 col'>
+                    <h1 className='title-2 on-light'>January 2018</h1>
+                    <p className='description description-left on-light'>Bootstrap that project</p>
                   </div>
                 </div>
               </div>
             </div>
-          </div> */}
-          {/* <div className='overview'>
-            <div className='centered-division'>
-              <h1 className='title line-separated'>Network Overview</h1>
-              <p className='description'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-              <img src={'./latude-overview.png'} />
-            </div>
-          </div> */}
+          </div>
           <div className='footer white-division'>
             <div className='centered-division'>
               <p className='on-light'>All rights reserved. latude. inc.</p>
