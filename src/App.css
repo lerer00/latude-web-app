@@ -95,6 +95,42 @@
 
 /* END COMMON */
 
+.timeline .line-division {
+    position: relative;
+}
+
+.timeline .line-division::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: ' ';
+    width: 50%;
+    height: 180%;
+    border-right: solid #595959 1px;
+}
+
+.timeline .line-division::after {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    content: ' ';
+    width: 44px;
+    height: 44px;
+    border-radius: 3px;
+    background-color: #F4F4F4;
+    transform: translate(-50%, -50%);
+}
+
+.timeline .line-event {
+    position: relative;
+    z-index: 200;
+}
+
+.timeline .line-event .icon {
+    width: 36px;
+}
+
 .footer .centered-division {
     padding: 16px 0;
 }

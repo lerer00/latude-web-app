@@ -155,7 +155,7 @@ class App extends React.Component {
           </div>
           <div className='white-division'>
             <div className='centered-division'>
-              <div className='container'>
+              <div className='container timeline'>
                 <div className='row'>
                   <div className='col-2' />
                   <div className='col-8 col'>
@@ -165,7 +165,22 @@ class App extends React.Component {
                   <div className='col-2' />
                 </div>
                 <div className='row'>
-                  <div className='col-3' />
+                  <div className='col-3 line-division'>
+                    <div className='line-event'>
+                      <img className='icon' src={egoMultiPlatform2} />
+                    </div>
+                  </div>
+                  <div className='col-9 col'>
+                    <h1 className='title-2 on-light'>January 2018</h1>
+                    <p className='description description-left on-light'>Bootstrap that project</p>
+                  </div>
+                </div>
+                <div className='row'>
+                  <div className='col-3 line-division'>
+                    <div className='line-event'>
+                      <img className='icon' src={egoMultiPlatform2} />
+                    </div>
+                  </div>
                   <div className='col-9 col'>
                     <h1 className='title-2 on-light'>January 2018</h1>
                     <p className='description description-left on-light'>Bootstrap that project</p>
