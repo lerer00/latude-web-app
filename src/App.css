@@ -61,10 +61,15 @@
     color: #A7A7A7;
     font-size: 1.1em;
     line-height: 1.6;
+    text-align: justify;
 }
 
 .description-left {
     text-align: left;
+}
+
+.description-center {
+    text-align: center;
 }
 
 .on-dark {
@@ -95,6 +100,10 @@
 
 /* END COMMON */
 
+.overview {
+    position: relative;
+}
+
 .timeline .line-division {
     position: relative;
 }
@@ -109,7 +118,7 @@
     left: 0;
     content: ' ';
     width: 50%;
-    height: 150%;
+    height: 200%;
     border-right: solid #0665D0 2px;
 }
 
@@ -119,8 +128,8 @@
     top: 50%;
     left: 50%;
     content: ' ';
-    width: 48px;
-    height: 48px;
+    width: 50px;
+    height: 60px;
     border-radius: 3px;
     background-color: #FFFFFF;
     transform: translate(-50%, -50%);
