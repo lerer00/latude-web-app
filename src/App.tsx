@@ -1,31 +1,138 @@
 import * as React from 'react';
+import axios from 'axios';
 import { Jumbotron } from './jumbotron';
-import { Button } from './button';
+import { Button, IButtonState } from './button';
 import './App.css';
 
-const egoBusinessWorkStation2 = require('./img/ego/business-work-station-2.svg');
-const egoDevices = require('./img/ego/devices.svg');
-const egoLab = require('./img/ego/lab.svg');
-const egoLaunch = require('./img/ego/launch.svg');
-const egoLogout1 = require('./img/ego/logout-1.svg');
-const egoMultiPlatform2 = require('./img/ego/multi-platform-2.svg');
-const egoNetwork = require('./img/ego/network.svg');
-const egoTransferFile = require('./img/ego/transfer-file.svg');
-const egoStandingDesk = require('./img/ego/standing-desk.svg');
+const egoBusinessWorkStation2 = require('./img/ego/duotone/business-work-station-2.svg');
+const egoDevices = require('./img/ego/duotone/devices.svg');
+const egoLab = require('./img/ego/duotone/lab.svg');
+const egoLaunch = require('./img/ego/duotone/launch.svg');
+const egoMultiPlatform2 = require('./img/ego/duotone/multi-platform-2.svg');
+const egoNetwork = require('./img/ego/duotone/network.svg');
+const egoTransferFile = require('./img/ego/duotone/transfer-file.svg');
+const egoStandingDesk = require('./img/ego/duotone/standing-desk.svg');
+const egoBusinessIdeaUser3 = require('./img/ego/duotone/business-idea-user-3.svg');
+const egoProgrammingTyping = require('./img/ego/duotone/programming-typing.svg');
+const egoPackageTrolley4 = require('./img/ego/duotone/package-trolley-4.svg');
+const egoBusinessHandshakeDeal = require('./img/ego/duotone/business-handshake-deal.svg');
 
-const egoBusinessIdeaUser3 = require('./img/ego/business-idea-user-3.svg');
-const egoProgrammingTyping = require('./img/ego/programming-typing.svg');
-const egoPackageTrolley4 = require('./img/ego/package-trolley-4.svg');
-const egoBusinessHandshakeDeal = require('./img/ego/business-handshake-deal.svg');
+export namespace App {
+  export interface Props {
+    // empty
+  }
 
-class App extends React.Component {
+  export interface State {
+    help: IHelpForm;
+  }
+
+  export interface Context {
+    // empty
+  }
+}
+
+export interface IHelpForm {
+  sent: boolean;
+  status: IButtonState;
+  text: string;
+  value: string;
+}
+
+class App extends React.Component<App.Props, App.State> {
   constructor() {
     super();
+
+    this.state = {
+      help: {
+        sent: false,
+        status: IButtonState.default,
+        text: 'Get in touch',
+        value: ''
+      }
+    };
+
     this.whitepaperAction = this.whitepaperAction.bind(this);
+    this.help = this.help.bind(this);
   }
 
   whitepaperAction() {
     // Here redirect to our github or reroute to another page.
+  }
+
+  help() {
+    if (this.state.help.value.length <= 0) {
+      this.setState({
+        help: {
+          sent: false,
+          status: IButtonState.error,
+          text: 'Error',
+          value: ''
+        }
+      });
+
+      return;
+    }
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!re.test(this.state.help.value.toLowerCase())) {
+      this.setState({
+        help: {
+          sent: false,
+          status: IButtonState.error,
+          text: 'Error',
+          value: ''
+        }
+      });
+
+      return;
+    }
+
+    if (!this.state.help.sent) {
+      axios.post('/mails', {
+        to: this.state.help.value
+      }).then((result) => {
+        if (result.status === 200) {
+          this.setState({
+            help: {
+              sent: true,
+              status: IButtonState.success,
+              text: 'Success',
+              value: this.state.help.value
+            }
+          });
+        } else {
+          this.setState({
+            help: {
+              sent: false,
+              status: IButtonState.warning,
+              text: 'Retry',
+              value: this.state.help.value
+            }
+          });
+        }
+      }).catch((error) => {
+        this.setState({
+          help: {
+            sent: false,
+            status: IButtonState.error,
+            text: 'Error',
+            value: this.state.help.value
+          }
+        });
+      });
+    }
+  }
+
+  handleHelpEmailValueChange(e: any) {
+    var tmpHelp = {
+      sent: false,
+      status: IButtonState.default,
+      text: 'Get in touch',
+      value: e.target.value
+    };
+
+    this.setState({
+      help: tmpHelp
+    });
   }
 
   render() {
@@ -97,7 +204,7 @@ class App extends React.Component {
                     It is going to be updated frequently.</p>
                     <Button
                       text='Read our whitepaper'
-                      icon={egoLogout1}
+                      state={IButtonState.default}
                       action={this.whitepaperAction}
                     />
                   </div>
@@ -106,7 +213,7 @@ class App extends React.Component {
               </div>
             </div>
           </div>
-          <div className='blue-division'>
+          <div className='blue-division modules'>
             <div className='centered-division'>
               <div className='container'>
                 <div className='row'>
@@ -119,7 +226,7 @@ class App extends React.Component {
                 </div>
                 <div className='row'>
                   <div className='col-2'>
-                    <img className='icon on-dark-icon' src={egoTransferFile} />
+                    <img className='module-icon on-dark-icon' src={egoTransferFile} />
                   </div>
                   <div className='col-10'>
                     <h1 className='title-2 on-dark'>Module #1: blockchain contracts</h1>
@@ -128,7 +235,7 @@ class App extends React.Component {
                 </div>
                 <div className='row'>
                   <div className='col-2'>
-                    <img className='icon on-dark-icon' src={egoNetwork} />
+                    <img className='module-icon on-dark-icon' src={egoNetwork} />
                   </div>
                   <div className='col-10'>
                     <h1 className='title-2 on-dark'>Module #2: blockchain listener</h1>
@@ -137,7 +244,7 @@ class App extends React.Component {
                 </div>
                 <div className='row'>
                   <div className='col-2'>
-                    <img className='icon on-dark-icon' src={egoBusinessWorkStation2} />
+                    <img className='module-icon on-dark-icon' src={egoBusinessWorkStation2} />
                   </div>
                   <div className='col-10'>
                     <h1 className='title-2 on-dark'>Module #3: DApp for owners</h1>
@@ -146,7 +253,7 @@ class App extends React.Component {
                 </div>
                 <div className='row'>
                   <div className='col-2'>
-                    <img className='icon on-dark-icon' src={egoMultiPlatform2} />
+                    <img className='module-icon on-dark-icon' src={egoMultiPlatform2} />
                   </div>
                   <div className='col-10'>
                     <h1 className='title-2 on-dark'>Module #4: DApp for users</h1>
@@ -222,7 +329,7 @@ class App extends React.Component {
               </div>
             </div>
           </div>
-          <div className='dashed-division'>
+          <div className='dashed-division help'>
             <div className='centered-division'>
               <div className='container'>
                 <div className='row'>
@@ -230,11 +337,14 @@ class App extends React.Component {
                     <h1 className='title on-light line-separated'>Wanna help</h1>
                     <p className='description on-light'>If by any mean you find this project interesting, awesome, futuristic, nice and you would like to give us a hand, we can make something happen.
                     This project is not going to build by himself, we always need help!</p>
-                    <Button
-                      text='Get in touch'
-                      icon={egoLogout1}
-                      action={this.whitepaperAction}
-                    />
+                    <div className='form'>
+                      <input type='text' placeholder='john.doe@gmail.com' value={this.state.help.value} onChange={this.handleHelpEmailValueChange.bind(this)} />
+                      <Button
+                        text={this.state.help.text}
+                        state={this.state.help.status}
+                        action={this.help}
+                      />
+                    </div>
                   </div>
                   <div className='col-6'>
                     <img src={egoStandingDesk} />

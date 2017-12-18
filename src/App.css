@@ -22,7 +22,7 @@
 }
 
 .centered-division {
-    width: 1080px;
+    width: 960px;
     margin: auto;
     padding: 40px 0;
     display: block;
@@ -40,7 +40,7 @@
 .title {
     display: table;
     margin: auto;
-    font-size: 1.8em;
+    font-size: 1.6em;
     line-height: 1;
     letter-spacing: 2px;
     font-weight: 700;
@@ -50,7 +50,7 @@
 .title-2 {
     position: relative;
     display: table;
-    font-size: 1.4em;
+    font-size: 1.2em;
     line-height: 1.4;
     letter-spacing: 2px;
     font-weight: 600;
@@ -59,8 +59,8 @@
 
 .description {
     color: #A7A7A7;
-    font-size: 1.1em;
-    line-height: 1.6;
+    font-size: 1em;
+    line-height: 1.5;
     text-align: justify;
 }
 
@@ -104,6 +104,15 @@
     position: relative;
 }
 
+.modules {
+    position: relative;
+}
+
+.modules .module-icon {
+    padding: 16px;
+    width: 64px;
+}
+
 .timeline .line-division {
     position: relative;
 }
@@ -142,6 +151,32 @@
 
 .timeline .line-event .icon {
     width: 36px;
+}
+
+.help .form{
+    border-radius: 3px;
+    margin: 36px auto 0 auto;
+    padding: 6px;
+    background-color: #ffffff;
+    border: solid 1px #f4f4f4;
+    width: 90%;
+}
+
+.help .form input{
+    padding: 0 8px;
+    margin-right: 8px;
+    border: none;
+    outline: 0;
+    background-color: transparent;
+    display: inline-block;
+    height: 32px;
+    width: 60%;
+}
+
+.help .form .button{
+    width: 33%;
+    float: right;
+    margin: 0;
 }
 
 .footer .centered-division {

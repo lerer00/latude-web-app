@@ -17,8 +17,16 @@ export namespace Button {
 
 export interface IButton {
     text: string;
-    icon: any;
+    state: IButtonState;
     action: Function;
+}
+
+export enum IButtonState {
+    default = 0,
+    success = 1,
+    error = 2,
+    warning = 3,
+    info = 4
 }
 
 export class Button extends React.Component<Button.Props, Button.State> {
@@ -33,9 +41,30 @@ export class Button extends React.Component<Button.Props, Button.State> {
     }
 
     render() {
+        var wantedStyles = undefined;
+        switch (this.props.state) {
+            case IButtonState.default:
+                wantedStyles = 'button default';
+                break;
+            case IButtonState.success:
+                wantedStyles = 'button success';
+                break;
+            case IButtonState.error:
+                wantedStyles = 'button error';
+                break;
+            case IButtonState.warning:
+                wantedStyles = 'button warning';
+                break;
+            case IButtonState.info:
+                wantedStyles = 'button info';
+                break;
+            default:
+                wantedStyles = 'button default';
+                break;
+        }
+
         return (
-            <button className='button' onClick={() => this.executeAction()}>
-                {this.props.icon ? <img className='button-icon' src={this.props.icon} /> : null}
+            <button className={wantedStyles} onClick={() => this.executeAction()}>
                 <span className='button-text'>{this.props.text}</span>
             </button>
         );
