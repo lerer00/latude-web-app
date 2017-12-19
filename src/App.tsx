@@ -51,6 +51,7 @@ class App extends React.Component<App.Props, App.State> {
       }
     };
 
+    this.handleHelpEmailValueChange = this.handleHelpEmailValueChange.bind(this);
     this.whitepaperAction = this.whitepaperAction.bind(this);
     this.help = this.help.bind(this);
   }
@@ -87,7 +88,8 @@ class App extends React.Component<App.Props, App.State> {
     }
 
     if (!this.state.help.sent) {
-      axios.post('/mails', {
+      console.log(process.env.REACT_APP_API_URL);
+      axios.post(process.env.REACT_APP_API_URL + '/mails', {
         to: this.state.help.value
       }).then((result) => {
         if (result.status === 200) {
@@ -338,7 +340,7 @@ class App extends React.Component<App.Props, App.State> {
                     <p className='description on-light'>If by any mean you find this project interesting, awesome, futuristic, nice and you would like to give us a hand, we can make something happen.
                     This project is not going to build by himself, we always need help!</p>
                     <div className='form'>
-                      <input type='text' placeholder='john.doe@gmail.com' value={this.state.help.value} onChange={this.handleHelpEmailValueChange.bind(this)} />
+                      <input type='text' placeholder='john.doe@gmail.com' value={this.state.help.value} onChange={this.handleHelpEmailValueChange} />
                       <Button
                         text={this.state.help.text}
                         state={this.state.help.status}

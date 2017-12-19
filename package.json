@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.17.1",
+    "dotenv": "^4.0.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-scripts-ts": "^2.8.0",
@@ -18,6 +19,5 @@
     "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject"
-  },
-  "proxy": "https://latude-web-app-backend.herokuapp.com:443"
+  }
 }
