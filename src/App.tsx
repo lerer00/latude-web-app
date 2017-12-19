@@ -88,7 +88,6 @@ class App extends React.Component<App.Props, App.State> {
     }
 
     if (!this.state.help.sent) {
-      console.log(process.env.REACT_APP_API_URL);
       axios.post(process.env.REACT_APP_API_URL + '/mails', {
         to: this.state.help.value
       }).then((result) => {
