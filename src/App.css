@@ -12,6 +12,7 @@
 .blue-division {
     background-color: #0665D0;
     text-align: center;
+    text-shadow: rgba(0, 0, 0, .4) 1px 1px 1px;
 }
 
 .dashed-division {
@@ -104,6 +105,10 @@
     position: relative;
 }
 
+.overview .illustration {
+    max-height: 300px;
+}
+
 .modules {
     position: relative;
 }
@@ -153,17 +158,17 @@
     width: 36px;
 }
 
-.help .form{
+.help .form {
     border-radius: 3px;
     margin: 36px auto 0 auto;
     padding: 6px;
     background-color: #ffffff;
     border: solid 1px #f4f4f4;
     width: 90%;
-    box-shadow: 0 2px 3px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08)
+    box-shadow: 0 2px 3px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08)
 }
 
-.help .form input{
+.help .form input {
     padding: 0 8px;
     margin-right: 8px;
     border: none;
@@ -174,7 +179,7 @@
     width: 60%;
 }
 
-.help .form .button{
+.help .form .button {
     width: 33%;
     float: right;
     margin: 0;

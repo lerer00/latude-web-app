@@ -5,7 +5,6 @@ import { Button, IButtonState } from './button';
 import './App.css';
 
 const egoBusinessWorkStation2 = require('./img/ego/duotone/business-work-station-2.svg');
-const egoDevices = require('./img/ego/duotone/devices.svg');
 const egoLab = require('./img/ego/duotone/lab.svg');
 const egoLaunch = require('./img/ego/duotone/launch.svg');
 const egoMultiPlatform2 = require('./img/ego/duotone/multi-platform-2.svg');
@@ -155,7 +154,7 @@ class App extends React.Component<App.Props, App.State> {
                     That information should be available to everyone at low cost or even at no cost at all.</p>
                   </div>
                   <div className='col-6'>
-                    <img src={egoLab} />
+                    <img className='illustration' src={egoLab} />
                   </div>
                 </div>
               </div>
@@ -164,7 +163,7 @@ class App extends React.Component<App.Props, App.State> {
               <div className='container'>
                 <div className='row'>
                   <div className='col-6'>
-                    <img src={egoLaunch} />
+                    <img className='illustration' src={egoLaunch} />
                   </div>
                   <div className='col-6'>
                     <h1 className='title on-light line-separated'>Becoming independant</h1>
@@ -187,7 +186,7 @@ class App extends React.Component<App.Props, App.State> {
                     By ditching third-parties, 0 commissions now become a reality.</p>
                   </div>
                   <div className='col-6'>
-                    <img src={egoDevices} />
+                    <img className='illustration' src='./ethereum-logo.jpg' />
                   </div>
                 </div>
               </div>
@@ -221,7 +220,10 @@ class App extends React.Component<App.Props, App.State> {
                   <div className='col-2' />
                   <div className='col-8'>
                     <h1 className='title on-dark line-separated'>latude. network</h1>
-                    <p className='description on-dark'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <p className='description on-dark'>Multiple pieces are needed to create the whole infrastructure.
+                    From the ethereum blockchain to our multiple clients, those are all needed to achieve massive success.
+                    Easy to use, secure, fast, beautiful and intuitive are our guideline.
+                    Below are key pieces that are currently in development.</p>
                   </div>
                   <div className='col-2' />
                 </div>
@@ -230,8 +232,10 @@ class App extends React.Component<App.Props, App.State> {
                     <img className='module-icon on-dark-icon' src={egoTransferFile} />
                   </div>
                   <div className='col-10'>
-                    <h1 className='title-2 on-dark'>Module #1: blockchain contracts</h1>
-                    <p className='description description-left on-dark'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <h1 className='title-2 on-dark'>Module #1: smart contracts</h1>
+                    <p className='description description-left on-dark'>Multiple contracts are needed for hotel assets to become "smart".
+                    They will have their own availabilities, metadata informations and much more.
+                    There'll also be a mechanism to accept paiment. This will allow user to pay with ether or fiat.</p>
                   </div>
                 </div>
                 <div className='row'>
@@ -239,8 +243,11 @@ class App extends React.Component<App.Props, App.State> {
                     <img className='module-icon on-dark-icon' src={egoNetwork} />
                   </div>
                   <div className='col-10'>
-                    <h1 className='title-2 on-dark'>Module #2: blockchain listener</h1>
-                    <p className='description description-left on-dark'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <h1 className='title-2 on-dark'>Module #2: ethereum listener</h1>
+                    <p className='description description-left on-dark'>A server is needed to gather every booking and keep tracks of a ledger in parallel because it's nearly impossible to query the blockchain like a relational database.
+                    On each block mined, information will be appended and our ledger will be in sync.
+                    This is needed for online travel agencies to know what are the availabilities.
+                    </p>
                   </div>
                 </div>
                 <div className='row'>
@@ -249,7 +256,8 @@ class App extends React.Component<App.Props, App.State> {
                   </div>
                   <div className='col-10'>
                     <h1 className='title-2 on-dark'>Module #3: DApp for owners</h1>
-                    <p className='description description-left on-dark'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p className='description description-left on-dark'>Hotel owners will be able to interact with the blockchain via a decentralized application.
+                    Multiple actions like setting prices, managing informations, viewing availabilities, collecting money from their assets and much more will be a possibility through this client.</p>
                   </div>
                 </div>
                 <div className='row'>
@@ -258,7 +266,9 @@ class App extends React.Component<App.Props, App.State> {
                   </div>
                   <div className='col-10'>
                     <h1 className='title-2 on-dark'>Module #4: DApp for users</h1>
-                    <p className='description description-left on-dark'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p className='description description-left on-dark'>This is what every users will use to book their stay at any hotel around the globe.
+                    Find exactly what they are looking for and pay for it, right away in fiat or ether.
+                    This will be connected with our listener module and the ethereum blockchain.</p>
                   </div>
                 </div>
               </div>
