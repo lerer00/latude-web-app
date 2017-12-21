@@ -22,6 +22,7 @@
 	text-align: center;
 	margin: 0 0 16px 0;
 	pointer-events: none;
+	text-shadow: rgba(0, 0, 0, .4) 1px 1px 1px;
 }
 
 .jumbotron-subtitle {
