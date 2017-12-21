@@ -101,16 +101,12 @@
 
 /* END COMMON */
 
-.overview {
-    position: relative;
-}
-
 .overview .illustration {
     max-height: 300px;
 }
 
-.modules {
-    position: relative;
+.overview .ethereum-logo {
+    width: 70%;
 }
 
 .modules .module-icon {

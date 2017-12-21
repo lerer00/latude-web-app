@@ -186,7 +186,9 @@ class App extends React.Component<App.Props, App.State> {
                     By ditching third-parties, 0 commissions now become a reality.</p>
                   </div>
                   <div className='col-6'>
-                    <img className='illustration' src='./ethereum-logo.jpg' />
+                    <div className='illustration'>
+                      <img src='./ethereum-logo.png' />
+                    </div>
                   </div>
                 </div>
               </div>

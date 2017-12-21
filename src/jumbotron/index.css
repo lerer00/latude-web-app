@@ -30,6 +30,7 @@
 	text-align: center;
 	color: #0667d0;
 	padding: 0.45em 0.5em;
+	border: none;
 	margin: auto;
 	letter-spacing: 0.5em;
 	text-indent: 0.5em;
@@ -43,7 +44,8 @@
 	width: 60%;
 	color: #ffffff;
 	text-align: center;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	line-height: 26px;
 	letter-spacing: 3px;
+	text-shadow: rgba(0, 0, 0, .4) 1px 1px 1px;
 }
