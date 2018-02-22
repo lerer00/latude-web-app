@@ -9,6 +9,13 @@
     text-align: center;
 }
 
+.memphis-division {
+    background-repeat: repeat;
+    background-size: 240px 240px;
+    background-image: url("./img/memphis.jpg");
+    padding: 64px 0;
+}
+
 .blue-division {
     background-color: #0665D0;
     text-align: center;
@@ -32,6 +39,33 @@
 .container {
     width: 96%;
     max-width: initial;
+}
+
+.deployed-network {
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.90);
+    padding: 16px 0;
+}
+
+.deployed-network .title {
+    font-size: 2em;
+    color: #A7A7A7;
+}
+
+.deployed-network .description {
+    position: relative;
+    font-size: 3em;
+    color: #595959;
+}
+
+.deployed-network .description .network-indicator {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 8px;
+    background-color: rgb(235,179,63);
+    vertical-align: middle;
 }
 
 .row {

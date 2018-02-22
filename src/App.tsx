@@ -87,7 +87,7 @@ class App extends React.Component<App.Props, App.State> {
     }
 
     if (!this.state.help.sent) {
-      axios.post(process.env.REACT_APP_API_URL + '/mails', {
+      axios.post(process.env.REACT_APP_HUB_URL + '/mails', {
         to: this.state.help.value
       }).then((result) => {
         if (result.status === 200) {
@@ -190,6 +190,20 @@ class App extends React.Component<App.Props, App.State> {
                       <img src='./ethereum-logo.png' />
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='memphis-division'>
+            <div className='centered-division'>
+            <div className='container deployed-network'>
+                <div className='row'>
+                  <div className='col-2' />
+                  <div className='col-8'>
+                    <h1 className='title on-light line-separated'>Now deployed on testnet</h1>
+                    <p className='description description-center'><span className='network-indicator'>&nbsp;</span> RinkeBy</p>
+                  </div>
+                  <div className='col-2' />
                 </div>
               </div>
             </div>
