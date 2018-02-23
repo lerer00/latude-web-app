@@ -1,5 +1,3 @@
-/* START COMMON */
-
 .app {
     font-family: 'Ubuntu', sans-serif;
 }
@@ -42,30 +40,33 @@
 }
 
 .deployed-network {
+    position: relative;
     border-radius: 3px;
     background-color: rgba(255, 255, 255, 0.90);
     padding: 16px 0;
 }
 
-.deployed-network .title {
-    font-size: 2em;
-    color: #A7A7A7;
-}
-
-.deployed-network .description {
+.deployed-network .network-identifier {
     position: relative;
-    font-size: 3em;
-    color: #595959;
+    font-size: 1.4em;
+    text-align: center;
+    color: #a7a7a7;
 }
 
-.deployed-network .description .network-indicator {
+.deployed-network .network-identifier .network-color {
     position: relative;
     display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin-bottom: 8px;
-    background-color: rgb(235,179,63);
+    width: 40px;
+    height: 40px;
+    margin: 8px 8px 32px;
+    background-color: rgb(235, 179, 63);
     vertical-align: middle;
+}
+
+.deployed-network .network-identifier .network-sigle {
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
 }
 
 .row {
@@ -133,14 +134,8 @@
     border: 0.5px solid #C0C0C0;
 }
 
-/* END COMMON */
-
 .overview .illustration {
     max-height: 300px;
-}
-
-.overview .ethereum-logo {
-    width: 70%;
 }
 
 .modules .module-icon {
@@ -217,4 +212,233 @@
 
 .footer .centered-division {
     padding: 16px 0;
+}
+
+@media only screen and (min-width: 719px) and (max-width: 1024px) {
+    .centered-division {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+    }
+    .memphis-division {
+        padding: 24px 0;
+    }
+    .row {
+        margin: 24px auto;
+    }
+    .title {
+        font-size: 1.3em;
+    }
+    .description {
+        padding: 0 24px;
+    }
+    .icon {
+        padding: 24px;
+        width: 300px;
+    }
+    .overview .illustration {
+        max-height: 250px;
+        margin-bottom: 16px;
+    }
+    .overview .centered-division {
+        padding: 0;
+    }
+    .deployed-network {
+        padding: 16px 0;
+    }
+    .deployed-network .network-identifier {
+        font-size: 1em;
+    }
+    .deployed-network .network-identifier .network-color {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 16px;
+    }
+    .deployed-network .network-identifier .network-sigle {
+        font-size: 1.6em;
+    }
+    .modules .title-2{
+        margin-bottom: 4px;
+    }
+    .modules .description{
+        padding: 0;
+    }
+    .modules .module-icon {
+        margin-bottom: 16px;
+    }
+    .timeline .description{
+        padding: 0;
+    }
+    .timeline .title-2{
+        text-align: left;
+        font-size: 1em;
+        margin-bottom: 8px;
+    }
+    .timeline .line-division-after::before {
+        height: 150%;
+    }
+    .help .form input {
+        padding: 0;
+        width: 50%;
+    }
+    .help .form .button {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 719px) {
+    .centered-division {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+    }
+    .memphis-division {
+        padding: 24px 0;
+    }
+    .row {
+        margin: 24px auto;
+    }
+    .title {
+        font-size: 1.3em;
+    }
+    .description {
+        padding: 0 24px;
+    }
+    .icon {
+        padding: 24px;
+        width: 300px;
+    }
+    .overview .illustration {
+        max-height: 250px;
+        margin-bottom: 16px;
+    }
+    .overview .centered-division {
+        padding: 0;
+    }
+    .deployed-network {
+        padding: 16px 0;
+    }
+    .deployed-network .network-identifier {
+        font-size: 1em;
+    }
+    .deployed-network .network-identifier .network-color {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 16px;
+    }
+    .deployed-network .network-identifier .network-sigle {
+        font-size: 1.6em;
+    }
+    .modules .title-2{
+        margin-bottom: 4px;
+    }
+    .modules .description{
+        padding: 0;
+    }
+    .modules .module-icon {
+        margin-bottom: 16px;
+    }
+    .timeline .title-2 {
+        margin: 0 auto 8px auto;
+        font-size: 1.2em;
+    }
+    .timeline .line-division-after::before {
+        display: none;
+    }
+    .timeline .description {
+        text-align: justify;
+    }
+    .timeline .line-event .icon {
+        padding: 16px;
+        width: 54px;
+    }
+    .help .form input {
+        padding: 0;
+        width: 50%;
+    }
+    .help .form .button {
+        width: 40%;
+    }
+    .help img{
+        margin-top: 24px;
+        width: 60%;
+    }
+}
+
+@media only screen and ( max-width: 480px) {
+    .centered-division {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+    }
+    .memphis-division {
+        padding: 24px 0;
+    }
+    .deployed-network {
+        padding: 0;
+    }
+    .row {
+        margin: 24px auto;
+    }
+    .title {
+        font-size: 1.3em;
+    }
+    .title-2 {
+        margin: 0 auto 8px auto;
+        font-size: 1em;
+    }
+    .description {
+        padding: 0 24px;
+    }
+    .icon {
+        padding: 24px;
+        width: 300px;
+    }
+    .overview .illustration {
+        max-height: 180px;
+        margin-bottom: 16px;
+    }
+    .overview .centered-division {
+        padding: 0;
+    }
+    .deployed-network .network-identifier {
+        font-size: 1em;
+    }
+    .deployed-network .network-identifier .network-color {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 16px;
+    }
+    .deployed-network .network-identifier .network-sigle {
+        font-size: 1.6em;
+    }
+    .modules .module-icon {
+        margin-bottom: 16px;
+    }
+    .modules .description {
+        text-align: justify;
+    }
+    .timeline .line-division-after::before {
+        display: none;
+    }
+    .timeline .description {
+        text-align: justify;
+    }
+    .timeline .line-event .icon {
+        padding: 16px;
+        width: 54px;
+    }
+    .help .form input {
+        padding: 0;
+        width: 50%;
+    }
+    .help .form .button {
+        width: 40%;
+    }
+    .help img{
+        margin-top: 24px;
+    }
 }

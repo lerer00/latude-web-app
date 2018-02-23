@@ -145,6 +145,9 @@ class App extends React.Component<App.Props, App.State> {
               <div className='container'>
                 <div className='row'>
                   <div className='col-6'>
+                    <img className='illustration' src={egoLab} />
+                  </div>
+                  <div className='col-6'>
                     <h1 className='title on-light line-separated'>A stuck industry</h1>
                     <p className='description'>As time goes one, new technologies appear and whole industries are reshaped.
                     This time, travel and hospitality business could be on the brink of being rethink from scratch.
@@ -152,9 +155,6 @@ class App extends React.Component<App.Props, App.State> {
                     Private companies own this kind of data and they are asking big bucks to access it.
                     In the end it’s not really the online travel agency who’s paying them, it’s the users who’s only trying to travel and every hotel owners who’s only trying to find a new client.
                     That information should be available to everyone at low cost or even at no cost at all.</p>
-                  </div>
-                  <div className='col-6'>
-                    <img className='illustration' src={egoLab} />
                   </div>
                 </div>
               </div>
@@ -179,16 +179,14 @@ class App extends React.Component<App.Props, App.State> {
               <div className='container'>
                 <div className='row'>
                   <div className='col-6'>
+                    <img className='illustration' src={egoLaunch} />
+                  </div>
+                  <div className='col-6'>
                     <h1 className='title on-light line-separated'>The Corner Stone</h1>
                     <p className='description'>Blockchain, that’s what allows us to give birth to this project.
                     This decentralized structure will be the backbone of latude.
                     By embracing this new technology, we’ll be able to provide our users the lowest price and for hotels, greater margins.
                     By ditching third-parties, 0 commissions now become a reality.</p>
-                  </div>
-                  <div className='col-6'>
-                    <div className='illustration'>
-                      <img src='./ethereum-logo.png' />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -196,12 +194,15 @@ class App extends React.Component<App.Props, App.State> {
           </div>
           <div className='memphis-division'>
             <div className='centered-division'>
-            <div className='container deployed-network'>
+              <div className='container deployed-network'>
                 <div className='row'>
                   <div className='col-2' />
                   <div className='col-8'>
-                    <h1 className='title on-light line-separated'>Now deployed on testnet</h1>
-                    <p className='description description-center'><span className='network-indicator'>&nbsp;</span> RinkeBy</p>
+                    <p className='network-identifier'>
+                      now deployed on
+                      <span className='network-color'>&nbsp;</span>
+                      <span className='network-sigle'>RinkeBy</span>
+                    </p>
                   </div>
                   <div className='col-2' />
                 </div>
@@ -304,23 +305,23 @@ class App extends React.Component<App.Props, App.State> {
                   <div className='col-2' />
                 </div>
                 <div className='row'>
-                  <div className='col-3 line-division line-division-after'>
+                  <div className='col-2 line-division line-division-after'>
                     <div className='line-event'>
                       <img className='icon' src={egoBusinessIdeaUser3} />
                     </div>
                   </div>
-                  <div className='col-9'>
+                  <div className='col-10'>
                     <h1 className='title-2 on-light'>October 2017: Proof of concept</h1>
                     <p className='description description-left on-light'>By gathering information about current industry and players, we did conceive, that using the blockchain for this kind of application was feasible and necessary.</p>
                   </div>
                 </div>
                 <div className='row'>
-                  <div className='col-3 line-division line-division-after'>
+                  <div className='col-2 line-division line-division-after'>
                     <div className='line-event'>
                       <img className='icon' src={egoProgrammingTyping} />
                     </div>
                   </div>
-                  <div className='col-9'>
+                  <div className='col-10'>
                     <h1 className='title-2 on-light'>November 2017: First line of code is written</h1>
                     <p className='description description-left on-light'>The first official project is in progress.
                     The initial module that we were working on is the platform for hotels and asset management.
@@ -328,25 +329,25 @@ class App extends React.Component<App.Props, App.State> {
                   </div>
                 </div>
                 <div className='row'>
-                  <div className='col-3 line-division line-division-after'>
+                  <div className='col-2 line-division line-division-after'>
                     <div className='line-event'>
                       <img className='icon' src={egoPackageTrolley4} />
                     </div>
                   </div>
-                  <div className='col-9'>
-                    <h1 className='title-2 on-light'>January 2018: Alpha release</h1>
+                  <div className='col-10'>
+                    <h1 className='title-2 on-light'>February 2018: Alpha release</h1>
                     <p className='description description-left on-light'>A global solution will be available on the RinkeBy network.
                     You’ll be able to book your “stay” onto our web application and navigate our service easily.</p>
                   </div>
                 </div>
                 <div className='row'>
-                  <div className='col-3 line-division'>
+                  <div className='col-2 line-division'>
                     <div className='line-event'>
                       <img className='icon' src={egoBusinessHandshakeDeal} />
                     </div>
                   </div>
-                  <div className='col-9'>
-                    <h1 className='title-2 on-light'>March 2018: Hotel partnerships</h1>
+                  <div className='col-10'>
+                    <h1 className='title-2 on-light'>April 2018: Hotel partnerships</h1>
                     <p className='description description-left on-light'>Yeah first major hotel partnerships.
                     We’ve got to start somewhere.
                     At first, they are going to be gated to keep control.
