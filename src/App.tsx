@@ -15,6 +15,7 @@ const egoBusinessIdeaUser3 = require('./img/ego/duotone/business-idea-user-3.svg
 const egoProgrammingTyping = require('./img/ego/duotone/programming-typing.svg');
 const egoPackageTrolley4 = require('./img/ego/duotone/package-trolley-4.svg');
 const egoBusinessHandshakeDeal = require('./img/ego/duotone/business-handshake-deal.svg');
+const egoFire = require('./img/ego/duotone/fire.svg');
 
 export namespace App {
   export interface Props {
@@ -142,12 +143,11 @@ class App extends React.Component<App.Props, App.State> {
           <Jumbotron />
           <div className='white-division overview'>
             <div className='centered-division'>
-              <div className='container'>
-                <div className='row'>
-                  <div className='col-6'>
-                    <img className='illustration' src={egoLab} />
+              <div className='grid'>
+                  <div className='illustration'>
+                    <img src={egoLab} />
                   </div>
-                  <div className='col-6'>
+                  <div className='content'>
                     <h1 className='title on-light line-separated'>A stuck industry</h1>
                     <p className='description'>As time goes one, new technologies appear and whole industries are reshaped.
                     This time, travel and hospitality business could be on the brink of being rethink from scratch.
@@ -156,32 +156,28 @@ class App extends React.Component<App.Props, App.State> {
                     In the end it’s not really the online travel agency who’s paying them, it’s the users who’s only trying to travel and every hotel owners who’s only trying to find a new client.
                     That information should be available to everyone at low cost or even at no cost at all.</p>
                   </div>
-                </div>
               </div>
             </div>
             <div className='centered-division'>
-              <div className='container'>
-                <div className='row'>
-                  <div className='col-6'>
-                    <img className='illustration' src={egoLaunch} />
+              <div className='grid'>
+                  <div className='illustration'>
+                    <img src={egoLaunch} />
                   </div>
-                  <div className='col-6'>
+                  <div className='content'>
                     <h1 className='title on-light line-separated'>Becoming independant</h1>
                     <p className='description'>The gap between users and hotel’s assets can now be bridged.
                     Every room, corporate event venue and even bed could now act as a sole entity and keep their own information in a decentralized manner.
                     They are now considered smart assets who knows their own availabilities, prices and metadata information based on how they are programmed.
                     This creates a whole new ecosystem without unnecessary third-parties that was adding friction along the process.</p>
                   </div>
-                </div>
               </div>
             </div>
             <div className='centered-division'>
-              <div className='container'>
-                <div className='row'>
-                  <div className='col-6'>
-                    <img className='illustration' src={egoLaunch} />
+              <div className='grid'>
+                  <div className='illustration'>
+                    <img className='fire' src={egoFire} />
                   </div>
-                  <div className='col-6'>
+                  <div className='content'>
                     <h1 className='title on-light line-separated'>The Corner Stone</h1>
                     <p className='description'>Blockchain, that’s what allows us to give birth to this project.
                     This decentralized structure will be the backbone of latude.
@@ -189,7 +185,6 @@ class App extends React.Component<App.Props, App.State> {
                     By ditching third-parties, 0 commissions now become a reality.</p>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
           <div className='memphis-division'>

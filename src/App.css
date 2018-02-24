@@ -11,7 +11,7 @@
     background-repeat: repeat;
     background-size: 240px 240px;
     background-image: url("./img/memphis.jpg");
-    padding: 64px 0;
+    padding: 40px 0;
 }
 
 .blue-division {
@@ -37,6 +37,13 @@
 .container {
     width: 96%;
     max-width: initial;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+    grid-auto-rows: minmax(100px, auto);
 }
 
 .deployed-network {
@@ -134,8 +141,21 @@
     border: 0.5px solid #C0C0C0;
 }
 
-.overview .illustration {
-    max-height: 300px;
+.overview{
+    padding: 64px;
+}
+
+.overview .grid .illustration .fire {
+    margin-top: 50px;
+    width: 50%;
+}
+
+.overview .grid .content {
+    grid-column: 2/4;
+}
+
+.overview .grid .content .description{
+    padding: 20px;
 }
 
 .modules .module-icon {
@@ -224,6 +244,21 @@
     .memphis-division {
         padding: 24px 0;
     }
+    .grid .illustration {
+        position: relative;
+    }
+    .grid .illustration img{
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 90%;
+    }
+    .grid .illustration .fire{
+        position: absolute;
+        top: 30px;
+        right: 50px;
+        width: 90%;
+    }
     .row {
         margin: 24px auto;
     }
@@ -236,13 +271,6 @@
     .icon {
         padding: 24px;
         width: 300px;
-    }
-    .overview .illustration {
-        max-height: 250px;
-        margin-bottom: 16px;
-    }
-    .overview .centered-division {
-        padding: 0;
     }
     .deployed-network {
         padding: 16px 0;
@@ -258,19 +286,19 @@
     .deployed-network .network-identifier .network-sigle {
         font-size: 1.6em;
     }
-    .modules .title-2{
+    .modules .title-2 {
         margin-bottom: 4px;
     }
-    .modules .description{
+    .modules .description {
         padding: 0;
     }
     .modules .module-icon {
         margin-bottom: 16px;
     }
-    .timeline .description{
+    .timeline .description {
         padding: 0;
     }
-    .timeline .title-2{
+    .timeline .title-2 {
         text-align: left;
         font-size: 1em;
         margin-bottom: 8px;
@@ -297,6 +325,9 @@
     .memphis-division {
         padding: 24px 0;
     }
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
     .row {
         margin: 24px auto;
     }
@@ -309,13 +340,6 @@
     .icon {
         padding: 24px;
         width: 300px;
-    }
-    .overview .illustration {
-        max-height: 250px;
-        margin-bottom: 16px;
-    }
-    .overview .centered-division {
-        padding: 0;
     }
     .deployed-network {
         padding: 16px 0;
@@ -331,10 +355,10 @@
     .deployed-network .network-identifier .network-sigle {
         font-size: 1.6em;
     }
-    .modules .title-2{
+    .modules .title-2 {
         margin-bottom: 4px;
     }
-    .modules .description{
+    .modules .description {
         padding: 0;
     }
     .modules .module-icon {
@@ -361,7 +385,7 @@
     .help .form .button {
         width: 40%;
     }
-    .help img{
+    .help img {
         margin-top: 24px;
         width: 60%;
     }
@@ -376,6 +400,9 @@
     }
     .memphis-division {
         padding: 24px 0;
+    }
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
     }
     .deployed-network {
         padding: 0;
@@ -397,12 +424,11 @@
         padding: 24px;
         width: 300px;
     }
-    .overview .illustration {
-        max-height: 180px;
-        margin-bottom: 16px;
+    .overview {
+        padding: 24px 8px;
     }
     .overview .centered-division {
-        padding: 0;
+        padding: 16px 0;
     }
     .deployed-network .network-identifier {
         font-size: 1em;
@@ -438,7 +464,7 @@
     .help .form .button {
         width: 40%;
     }
-    .help img{
+    .help img {
         margin-top: 24px;
     }
 }
