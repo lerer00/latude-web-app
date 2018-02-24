@@ -326,7 +326,7 @@
         padding: 24px 0;
     }
     .grid {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
     .row {
         margin: 24px auto;
@@ -340,6 +340,16 @@
     .icon {
         padding: 24px;
         width: 300px;
+    }
+    .overview .grid .illustration img {
+        margin-bottom: 16px;
+        width: 40%;
+    }
+    .overview .grid .illustration img.fire {
+        width: 20%;
+    }
+    .overview .grid .content {
+        grid-column: 1;
     }
     .deployed-network {
         padding: 16px 0;
@@ -402,7 +412,7 @@
         padding: 24px 0;
     }
     .grid {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
     .deployed-network {
         padding: 0;
@@ -429,6 +439,15 @@
     }
     .overview .centered-division {
         padding: 16px 0;
+    }
+    .overview .grid .illustration img {
+        width: 55%;
+    }
+    .overview .grid .illustration img.fire {
+        width: 30%;
+    }
+    .overview .grid .content {
+        grid-column: 1;
     }
     .deployed-network .network-identifier {
         font-size: 1em;
