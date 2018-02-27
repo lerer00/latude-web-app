@@ -141,20 +141,39 @@
     border: 0.5px solid #C0C0C0;
 }
 
-.overview{
+.overview {
     padding: 64px;
 }
 
-.overview .grid .illustration .fire {
-    margin-top: 50px;
-    width: 50%;
+.overview .grid .illustration {
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.overview .grid .illustration img {
+    width: 100%;
+}
+
+.overview .grid .illustration .fire1 {
+    width: 20%;
+    margin-right: -30px;
+}
+
+.overview .grid .illustration .fire2 {
+    width: 30%;
+    margin-right: -55px;
+}
+
+.overview .grid .illustration .fire3 {
+    width: 60%;
 }
 
 .overview .grid .content {
     grid-column: 2/4;
 }
 
-.overview .grid .content .description{
+.overview .grid .content .description {
     padding: 20px;
 }
 
@@ -244,21 +263,6 @@
     .memphis-division {
         padding: 24px 0;
     }
-    .grid .illustration {
-        position: relative;
-    }
-    .grid .illustration img{
-        position: absolute;
-        top: 80px;
-        right: 0;
-        width: 90%;
-    }
-    .grid .illustration .fire{
-        position: absolute;
-        top: 30px;
-        right: 50px;
-        width: 90%;
-    }
     .row {
         margin: 24px auto;
     }
@@ -271,6 +275,12 @@
     .icon {
         padding: 24px;
         width: 300px;
+    }
+    .overview .grid .illustration .fire1 {
+        margin-right: -20px;
+    }
+    .overview .grid .illustration .fire2 {
+        margin-right: -40px;
     }
     .deployed-network {
         padding: 16px 0;
@@ -342,15 +352,25 @@
         padding: 24px;
         width: 300px;
     }
-    .overview .grid .illustration img {
+    .overview .grid .illustration {
         margin-bottom: 24px;
-        width: 40%;
-    }
-    .overview .grid .illustration img.fire {
-        width: 20%;
     }
     .overview .grid .content {
         grid-column: 1;
+    }
+    .overview .grid .illustration .fire1 {
+        width: auto;
+        height: 100px;
+        margin-right: -60px;
+    }
+    .overview .grid .illustration .fire2 {
+        width: auto;
+        height: 140px;
+        margin-right: -80px;
+    }
+    .overview .grid .illustration .fire3 {
+        width: auto;
+        height: 180px;
     }
     .deployed-network {
         padding: 16px 0;
@@ -442,12 +462,20 @@
     .overview .centered-division {
         padding: 16px 0;
     }
-    .overview .grid .illustration img {
-        width: 55%;
-        margin-bottom: 16px;
+    .overview .grid .illustration {
+        margin-bottom: 24px;
     }
-    .overview .grid .illustration img.fire {
-        width: 30%;
+    .overview .grid .illustration .fire1 {
+        width: auto;
+        height: 50px;
+    }
+    .overview .grid .illustration .fire2 {
+        width: auto;
+        height: 80px;
+    }
+    .overview .grid .illustration .fire3 {
+        width: auto;
+        height: 130px;
     }
     .overview .grid .content {
         grid-column: 1;
