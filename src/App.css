@@ -465,6 +465,9 @@
     .overview .grid .illustration {
         margin-bottom: 24px;
     }
+    .overview .grid .illustration img {
+        width: 80%;
+    }
     .overview .grid .illustration .fire1 {
         width: auto;
         height: 50px;
