@@ -327,6 +327,7 @@
     }
     .grid {
         grid-template-columns: 1fr;
+        grid-gap: 0px;
     }
     .row {
         margin: 24px auto;
@@ -342,7 +343,7 @@
         width: 300px;
     }
     .overview .grid .illustration img {
-        margin-bottom: 16px;
+        margin-bottom: 24px;
         width: 40%;
     }
     .overview .grid .illustration img.fire {
@@ -413,6 +414,7 @@
     }
     .grid {
         grid-template-columns: 1fr;
+        grid-gap: 0px;
     }
     .deployed-network {
         padding: 0;
@@ -442,6 +444,7 @@
     }
     .overview .grid .illustration img {
         width: 55%;
+        margin-bottom: 16px;
     }
     .overview .grid .illustration img.fire {
         width: 30%;
