@@ -3,7 +3,8 @@
 	position: relative;
 	height: 100vh;
 	width: 100%;
-	background-image: linear-gradient(to top, #0667f0 0%, #399aff 100%);
+	background-image: linear-gradient(to top, #00c6fb 0%, #0665d0 100%);
+    background-size: cover;
 }
 
 .jumbotron-inner {
@@ -29,7 +30,7 @@
 	background: #ffffff;
 	display: table;
 	text-align: center;
-	color: #0667d0;
+	color: #0665d0;
 	padding: 0.45em 0.5em;
 	border: none;
 	margin: auto;

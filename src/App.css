@@ -14,8 +14,15 @@
     padding: 40px 0;
 }
 
+.blue-gradient-division{
+    background-image: linear-gradient(to bottom, #00c6fb 0%, #0665d0 100%);
+    background-size: cover;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, .4) 1px 1px 1px;
+}
+
 .blue-division {
-    background-color: #0665D0;
+    background-color: #0665d0;
     text-align: center;
     text-shadow: rgba(0, 0, 0, .4) 1px 1px 1px;
 }

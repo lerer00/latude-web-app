@@ -228,7 +228,7 @@ achievable within a respectable time frame. It is going to be updated frequently
               </div>
             </div>
           </div>
-          <div className='blue-division modules'>
+          <div className='blue-gradient-division modules'>
             <div className='centered-division'>
               <div className='container'>
                 <div className='row'>
