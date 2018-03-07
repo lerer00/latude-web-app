@@ -17,6 +17,7 @@
 }
 
 .jumbotron-title {
+	font-family: 'Ubuntu', sans-serif;
 	font-size: 11em;
 	font-weight: normal;
 	color: #ffffff;
@@ -46,8 +47,8 @@
 	width: 70%;
 	color: #ffffff;
 	text-align: center;
-	font-size: 1em;
-	line-height: 26px;
+	font-size: 18px;
+	line-height: 1.5;
 	letter-spacing: 3px;
 	text-shadow: rgba(0, 0, 0, .4) 1px 1px 1px;
 }

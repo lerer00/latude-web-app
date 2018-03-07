@@ -148,7 +148,7 @@ class App extends React.Component<App.Props, App.State> {
                   <img src={egoLab} />
                 </div>
                 <div className='content'>
-                  <h1 className='title on-light line-separated'>A stuck industry</h1>
+                  <h1 className='title-3 on-light line-separated'>A stuck industry</h1>
                   <p className='description'>As time goes on, new technologies appear and whole industries are reshaped. This time, travel
 and hospitality business could be on the brink of being rethought from scratch. As of today, all
 online travel agencies are having a hard time knowing what assets are available in each hotel
@@ -166,7 +166,7 @@ cost at all.</p>
                   <img src={egoLaunch} />
                 </div>
                 <div className='content'>
-                  <h1 className='title on-light line-separated'>Becoming independant</h1>
+                  <h1 className='title-3 on-light line-separated'>Becoming independant</h1>
                   <p className='description'>The gap between users’ and hotel’s assets can now be bridged. Every room, corporate event
 venue and even bed could now act as a sole entity and keep their own information in a
 decentralized manner. They are now considered smart assets who know their own availabilities,
@@ -183,7 +183,7 @@ ecosystem without unnecessary third-parties that were adding friction throughout
                   <img className='fire fire3' src={egoFire} />
                 </div>
                 <div className='content'>
-                  <h1 className='title on-light line-separated'>The spark</h1>
+                  <h1 className='title-3 on-light line-separated'>The spark</h1>
                   <p className='description'>Blockchain, that’s what allows us to give birth to this project. This decentralized structure will be
 the backbone of latude. By embracing this new technology, we’ll be able to provide our users
 the lowest price and for hotels, greater profit margins.</p>
@@ -234,7 +234,7 @@ achievable within a respectable time frame. It is going to be updated frequently
                 <div className='row'>
                   <div className='col-2' />
                   <div className='col-8'>
-                    <h1 className='title on-dark line-separated'>latude. network</h1>
+                    <h1 className='title on-dark line-separated'>The latude. network</h1>
                     <p className='description on-dark'>Multiple pieces are needed to create the whole infrastructure. From the ethereum blockchain to
 our multiple clients, those are all needed to achieve massive success. Easy to use, secure, fast,
 beautiful and intuitive are our guideline. Below are key pieces that are currently in

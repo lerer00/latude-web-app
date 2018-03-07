@@ -1,5 +1,15 @@
+@font-face {
+    font-family: CircularStdBlack;
+    src: url("./fonts/CircularStd-Black.otf") format("opentype");
+}
+
+@font-face{
+    font-family: CircularStdBook;
+    src: url("./fonts/CircularStd-Book.otf") format("opentype");
+}
+
 .app {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'CircularStdBook', sans-serif;
 }
 
 .white-division {
@@ -78,6 +88,7 @@
 }
 
 .deployed-network .network-identifier .network-sigle {
+    font-family: 'CircularStdBlack', sans-serif;
     position: relative;
     display: inline-block;
     font-size: 2em;
@@ -88,28 +99,39 @@
 }
 
 .title {
+    font-family: 'CircularStdBlack', sans-serif;
     display: table;
     margin: auto;
-    font-size: 1.6em;
+    font-size: 48px;
     line-height: 1;
-    letter-spacing: 2px;
+    letter-spacing: -1px;
     font-weight: 700;
-    text-transform: uppercase;
 }
 
 .title-2 {
+    font-family: 'CircularStdBlack', sans-serif;
     position: relative;
     display: table;
-    font-size: 1.2em;
-    line-height: 1.4;
+    font-size: 20px;
+    line-height: 1.5;
     letter-spacing: 2px;
     font-weight: 600;
-    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.title-3 {
+    font-family: 'CircularStdBlack', sans-serif;
+    display: table;
+    margin: auto;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -1px;
+    font-weight: 700;
 }
 
 .description {
     color: #A7A7A7;
-    font-size: 1em;
+    font-size: 18px;
     line-height: 1.5;
     text-align: justify;
 }
@@ -132,7 +154,7 @@
 }
 
 .on-light {
-    color: #595959;
+    color: #212529;
 }
 
 .icon {
