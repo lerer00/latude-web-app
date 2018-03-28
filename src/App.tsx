@@ -2,20 +2,13 @@ import * as React from 'react';
 import axios from 'axios';
 import { Jumbotron } from './jumbotron';
 import { Button, IButtonState } from './button';
+import {
+  duoBusinessWorkStation, duoLab, duoLaunch, duoMultiPlatform,
+  duoNetwork, duoTransferFile, duoStandingDesk, duoBusinessIdeaUser,
+  duoProgrammingTyping, duoPackageTrolley, duoBusinessHandShakeDeal,
+  duoFire, duoPiggyBank, duoBusinessStartupLaptop
+} from './img/index';
 import './App.css';
-
-const egoBusinessWorkStation2 = require('./img/ego/duotone/business-work-station-2.svg');
-const egoLab = require('./img/ego/duotone/lab.svg');
-const egoLaunch = require('./img/ego/duotone/launch.svg');
-const egoMultiPlatform2 = require('./img/ego/duotone/multi-platform-2.svg');
-const egoNetwork = require('./img/ego/duotone/network.svg');
-const egoTransferFile = require('./img/ego/duotone/transfer-file.svg');
-const egoStandingDesk = require('./img/ego/duotone/standing-desk.svg');
-const egoBusinessIdeaUser3 = require('./img/ego/duotone/business-idea-user-3.svg');
-const egoProgrammingTyping = require('./img/ego/duotone/programming-typing.svg');
-const egoPackageTrolley4 = require('./img/ego/duotone/package-trolley-4.svg');
-const egoBusinessHandshakeDeal = require('./img/ego/duotone/business-handshake-deal.svg');
-const egoFire = require('./img/ego/duotone/fire.svg');
 
 export namespace App {
   export interface Props {
@@ -145,7 +138,7 @@ class App extends React.Component<App.Props, App.State> {
             <div className='centered-division'>
               <div className='grid'>
                 <div className='illustration'>
-                  <img src={egoLab} />
+                  <img src={duoLab} />
                 </div>
                 <div className='content'>
                   <h1 className='title-3 on-light line-separated'>A stuck industry</h1>
@@ -163,7 +156,7 @@ cost at all.</p>
             <div className='centered-division'>
               <div className='grid'>
                 <div className='illustration'>
-                  <img src={egoLaunch} />
+                  <img src={duoLaunch} />
                 </div>
                 <div className='content'>
                   <h1 className='title-3 on-light line-separated'>Becoming independant</h1>
@@ -178,9 +171,9 @@ ecosystem without unnecessary third-parties that were adding friction throughout
             <div className='centered-division'>
               <div className='grid'>
                 <div className='illustration'>
-                  <img className='fire fire1' src={egoFire} />
-                  <img className='fire fire2' src={egoFire} />
-                  <img className='fire fire3' src={egoFire} />
+                  <img className='fire fire1' src={duoFire} />
+                  <img className='fire fire2' src={duoFire} />
+                  <img className='fire fire3' src={duoFire} />
                 </div>
                 <div className='content'>
                   <h1 className='title-3 on-light line-separated'>The spark</h1>
@@ -244,7 +237,7 @@ development.</p>
                 </div>
                 <div className='row'>
                   <div className='col-2'>
-                    <img className='module-icon on-dark-icon' src={egoTransferFile} />
+                    <img className='module-icon on-dark-icon' src={duoTransferFile} />
                   </div>
                   <div className='col-10'>
                     <h1 className='title-2 on-dark'>Module #1: smart contracts</h1>
@@ -255,7 +248,7 @@ to accept paiments. This will allow users to pay with ether or fiat.</p>
                 </div>
                 <div className='row'>
                   <div className='col-2'>
-                    <img className='module-icon on-dark-icon' src={egoNetwork} />
+                    <img className='module-icon on-dark-icon' src={duoNetwork} />
                   </div>
                   <div className='col-10'>
                     <h1 className='title-2 on-dark'>Module #2: ethereum listener</h1>
@@ -267,7 +260,7 @@ needed for online travel agencies to know what are the availabilities.</p>
                 </div>
                 <div className='row'>
                   <div className='col-2'>
-                    <img className='module-icon on-dark-icon' src={egoBusinessWorkStation2} />
+                    <img className='module-icon on-dark-icon' src={duoBusinessWorkStation} />
                   </div>
                   <div className='col-10'>
                     <h1 className='title-2 on-dark'>Module #3: DApp for owners</h1>
@@ -279,7 +272,7 @@ client.</p>
                 </div>
                 <div className='row'>
                   <div className='col-2'>
-                    <img className='module-icon on-dark-icon' src={egoMultiPlatform2} />
+                    <img className='module-icon on-dark-icon' src={duoMultiPlatform} />
                   </div>
                   <div className='col-10'>
                     <h1 className='title-2 on-dark'>Module #4: DApp for users</h1>
@@ -307,7 +300,7 @@ goals. Stay tuned, as this will be updated.</p>
                 <div className='row'>
                   <div className='col-2 line-division line-division-after'>
                     <div className='line-event'>
-                      <img className='icon' src={egoBusinessIdeaUser3} />
+                      <img className='icon' src={duoBusinessIdeaUser} />
                     </div>
                   </div>
                   <div className='col-10'>
@@ -319,7 +312,7 @@ the blockchain for this kind of application was feasible and necessary.</p>
                 <div className='row'>
                   <div className='col-2 line-division line-division-after'>
                     <div className='line-event'>
-                      <img className='icon' src={egoProgrammingTyping} />
+                      <img className='icon' src={duoProgrammingTyping} />
                     </div>
                   </div>
                   <div className='col-10'>
@@ -332,26 +325,46 @@ the blockchain and add their assets publicly was a good starting point.</p>
                 <div className='row'>
                   <div className='col-2 line-division line-division-after'>
                     <div className='line-event'>
-                      <img className='icon' src={egoPackageTrolley4} />
+                      <img className='icon' src={duoPackageTrolley} />
                     </div>
                   </div>
                   <div className='col-10'>
-                    <h1 className='title-2 on-light'>February 2018: Alpha release</h1>
+                    <h1 className='title-2 on-light'>April 2018: Alpha release</h1>
                     <p className='description description-left on-light'>A global solution will be available on the RinkeBy network. You’ll be able to book your
-“stay” onto our web application and navigate our service easily.</p>
+“stay” onto our web application and navigate our service easily. This first release will only accept payment with crypto.</p>
+                  </div>
+                </div>
+                <div className='row'>
+                  <div className='col-2 line-division line-division-after'>
+                    <div className='line-event'>
+                      <img className='icon' src={duoPiggyBank} />
+                    </div>
+                  </div>
+                  <div className='col-10'>
+                    <h1 className='title-2 on-light'>June 2018: Seed round</h1>
+                    <p className='description description-left on-light'>First round of financing will be required to gain traction and ease the development. More information on this will follow in due time.</p>
+                  </div>
+                </div>
+                <div className='row'>
+                  <div className='col-2 line-division line-division-after'>
+                    <div className='line-event'>
+                      <img className='icon' src={duoBusinessHandShakeDeal} />
+                    </div>
+                  </div>
+                  <div className='col-10'>
+                    <h1 className='title-2 on-light'>August 2018: Hotel partnerships</h1>
+                    <p className='description description-left on-light'>Partnerships announcement that are going to be added on our platforme.</p>
                   </div>
                 </div>
                 <div className='row'>
                   <div className='col-2 line-division'>
                     <div className='line-event'>
-                      <img className='icon' src={egoBusinessHandshakeDeal} />
+                      <img className='icon' src={duoBusinessStartupLaptop} />
                     </div>
                   </div>
                   <div className='col-10'>
-                    <h1 className='title-2 on-light'>April 2018: Hotel partnerships</h1>
-                    <p className='description description-left on-light'>First hotel partnerships. We’ve got to start somewhere.
-At first, they are going to be gated to keep control. Once smooth sailing is achieved,
-every hotel or property will be able to add their own assets.</p>
+                    <h1 className='title-2 on-light'>January 2019: 🔥 Official launch</h1>
+                    <p className='description description-left on-light'>All feature completed, crypto and fiat will be accepted and the whole marketplace will be available to anyone.</p>
                   </div>
                 </div>
               </div>
@@ -376,7 +389,7 @@ need help!</p>
                     </div>
                   </div>
                   <div className='col-6'>
-                    <img src={egoStandingDesk} />
+                    <img src={duoStandingDesk} />
                   </div>
                 </div>
               </div>
