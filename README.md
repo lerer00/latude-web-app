@@ -1,3 +1,7 @@
-# latude-web-app
+# latude web app
 
-Basic informational website.
+Informational website that explain the bolts and nuts of this project.  
+
+## How to Contribute
+
+Any contributions are welcome!
