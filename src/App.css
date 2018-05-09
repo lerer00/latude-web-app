@@ -3,7 +3,7 @@
     src: url("./fonts/CircularStd-Black.otf") format("opentype");
 }
 
-@font-face{
+@font-face {
     font-family: CircularStdBook;
     src: url("./fonts/CircularStd-Book.otf") format("opentype");
 }
@@ -24,7 +24,7 @@
     padding: 40px 0;
 }
 
-.blue-gradient-division{
+.blue-gradient-division {
     background-image: linear-gradient(to bottom, #00c6fb 0%, #0665d0 100%);
     background-size: cover;
     text-align: center;
@@ -171,7 +171,7 @@
 }
 
 .overview {
-    padding: 64px;
+    padding: 64px 0 88px 0;
 }
 
 .overview .grid .illustration {
@@ -209,6 +209,10 @@
 .modules .module-icon {
     padding: 16px;
     width: 64px;
+}
+
+.modules .button {
+    margin: 8px 0 0 0;
 }
 
 .timeline .line-division {
@@ -251,7 +255,7 @@
     width: 36px;
 }
 
-.help .form {
+.help .form, .subscription .form {
     border-radius: 3px;
     margin: 36px auto 0 auto;
     padding: 6px;
@@ -261,7 +265,7 @@
     box-shadow: 0 2px 3px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08)
 }
 
-.help .form input {
+.help .form input, .subscription .form input {
     padding: 0 8px;
     margin-right: 8px;
     border: none;
@@ -272,7 +276,7 @@
     width: 60%;
 }
 
-.help .form .button {
+.help .form .button, .subscription .form .button {
     width: 33%;
     float: right;
     margin: 0;

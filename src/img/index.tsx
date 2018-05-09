@@ -12,3 +12,4 @@ export const duoStandingDesk = require('./ego/duotone/standing-desk.svg');
 export const duoTransferFile = require('./ego/duotone/transfer-file.svg');
 export const duoPiggyBank = require('./ego/duotone/piggy-bank.svg');
 export const duoBusinessStartupLaptop = require('./ego/duotone/business-startup-laptop.svg');
+export const duoRobot = require('./ego/duotone/robot.svg');
