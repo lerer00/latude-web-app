@@ -102,8 +102,11 @@ export class Jumbotron extends React.Component<Jumbotron.Props, Jumbotron.State>
             <div className='jumbotron'>
                 <canvas className='scene scene--full waves' id='scene' />
                 <div className='jumbotron-inner'>
-                    <h2 className='jumbotron-title'>latude.</h2>
-                    <h3 className='jumbotron-subtitle'>Decentralized booking authority</h3>
+                    <h2 className='jumbotron-title'>
+                    <img className='logo' src='./latude-logo.png' />
+                    latude.
+                    </h2>
+                    <h3 className='jumbotron-subtitle'>Decentralized Booking Authority</h3>
                     <h4 className='jumbotron-text'>The latude. project exist to give back to users and hotels in the accommodation industry around the world what's belongs to them. 
                     Underneath this mission, it's a public ethereum based booking ledger that gives life to a real-time, peer-to-peer availabilities system,
                     designed to ease interactions and remove friction for online travel agencies.</h4>

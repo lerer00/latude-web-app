@@ -27,19 +27,21 @@
 	text-shadow: rgba(0, 0, 0, .4) 1px 1px 1px;
 }
 
+.jumbotron-title .logo{
+	width: 200px;
+	vertical-align: sub;
+}
+
 .jumbotron-subtitle {
-	background: #ffffff;
 	display: table;
 	text-align: center;
-	color: #0665d0;
+	color: #ffffff;
 	padding: 0.45em 0.5em;
 	border: none;
-	margin: auto;
-	letter-spacing: 0.5em;
-	text-indent: 0.5em;
-	font-size: 0.8em;
+	margin: 16px auto 0 auto;
+	letter-spacing: 6px;
+	font-size: 1.4em;
 	font-weight: bold;
-	text-transform: uppercase;
 }
 
 .jumbotron-text {
